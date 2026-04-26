@@ -1,0 +1,34 @@
+{
+  "name": "sixpack-sample-typescript-playwright",
+  "version": "1.0.0",
+  "description": "Sixpack sample showing Playwright flows as test-data generators",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/app.ts",
+    "build": "tsc",
+    "test": "playwright test --headed",
+    "test:ci": "playwright test",
+    "test:ui": "playwright test --ui",
+    "flow:list": "sixpack-playwright list --path tests/flows",
+    "flow:inspect": "sixpack-playwright inspect createApprovedCustomer --path tests/flows",
+    "flow:generate": "sixpack-playwright generate createApprovedCustomer --playwright-config playwright.config.ts --playwright-project chromium --input '{}'",
+    "adapter:validate": "sixpack-playwright-adapter validate ./sixpack/generators.ts --path ./tests/flows",
+    "start:supplier": "tsx --import dotenv/config sixpack/supplier.ts"
+  },
+  "dependencies": {
+    "@sixpack-dev/playwright-flows": "^0.5.11",
+    "@sixpack-dev/playwright-sixpack-adapter": "^0.5.11",
+    "@sixpack-dev/sdk": "^0.5.11",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.0.10",
+    "playwright": "^1.57.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
