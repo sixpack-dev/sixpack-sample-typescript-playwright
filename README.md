@@ -62,7 +62,7 @@ npm run flow:generate
 
 Create `config/` files and a `.env` file from `.env.example`, then set:
 
-- `SIXPACK_ACCOUNT`
+- `SIXPACK_ORGANIZATION`
 - `SIXPACK_AUTH_TOKEN`
 - `SIXPACK_CLIENT_CERT_PATH`
 - `SIXPACK_CLIENT_KEY_PATH`

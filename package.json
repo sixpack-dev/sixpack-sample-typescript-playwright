@@ -17,9 +17,9 @@
     "start:supplier": "tsx --import dotenv/config sixpack/supplier.ts"
   },
   "dependencies": {
-    "@sixpack-dev/playwright-flows": "^0.5.11",
-    "@sixpack-dev/playwright-sixpack-adapter": "^0.5.11",
-    "@sixpack-dev/sdk": "^0.5.11",
+    "@sixpack-dev/playwright-flows": "^0.5.12",
+    "@sixpack-dev/playwright-sixpack-adapter": "^0.5.12",
+    "@sixpack-dev/sdk": "^0.5.12",
     "dotenv": "^17.2.3",
     "express": "^5.2.1"
   },
